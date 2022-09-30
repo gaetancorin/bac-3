@@ -1,0 +1,13 @@
+DECLARE
+v_num (NUMBER)
+v_nom varchar2(20)
+v_date_naiss DATE
+v_tva NUMBER(3,2)
+BEGIN
+..initialisation
+-
+..affichages
+    DMS_OUTPOUT.PUT_LINE('numero : '||...);
+END;
+/
+SHOW ERR

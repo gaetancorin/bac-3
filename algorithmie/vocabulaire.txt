@@ -1,0 +1,11 @@
+affectation = comme assignation
+embranchement conditionnel= embranchement de condition ex: if else
+instruction machine = représente une exécution de une ligne de code, une action
+							(ex: if,elsif, else,for i in range, foreach, etc)
+valeur courante= valeur durant l'éxecution par exemple "i" dans une boucle.
+appel sequentiel des fonctions= appeller des fonctions une après l'autre
+Σ = sigma, a sa droite le somme de depart, en bas l'incrementateur et en haut 
+la somme final a ne pas depasser
+
+
+
