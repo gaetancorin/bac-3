@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1666000503 source:c:\users\gaeta\desktop\licence3\c++\projet1\projet2\projet2\projet2.cpp
+	<iostream>
+
+1666009167 source:c:\users\gaeta\desktop\licence3\c++\projet1\projet2\projet2\projet3.cpp
+	<iostream>
+	<string>
+
+1666016467 source:c:\users\gaeta\desktop\licence3\c++\projet1\projet2\projet2\projet4.cpp
+	<iostream>
+	<string>
+
