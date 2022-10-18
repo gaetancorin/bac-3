@@ -46,3 +46,10 @@ V3.3====================
 On crée un component MainMenu avec son template. Il est affiché grace a sa balise <MainMenu>.
 V3.4====================
 On crée un autre component Container avec son template. Il possède sa propre data pour le databinding.
+V3.5====================
+On crée un autre component registerform avec son template. Au submit, on enleve le comportement par defaut du formulaire et declenche la fonction registerUser du component.
+V3.6====================
+On crée un autre component "users" qui récupère 2 variables directement de son élement parent(la balise div id="app")
+V3.7====================
+On crée un autre component "counter" qui contient un autre component "increment-button".
+Des données sont transmise entre ses 2 component pour incrémenter un compteur à chaque clique
