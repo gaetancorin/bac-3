@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>VUE components</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1>Vue components</h1>
+
+        <mainmenu></mainmenu>
+        <container></container>
+        <registerform></registerform>
+        <users title="TITITITITITRE" :users="users"></users>
+    </div>
+
+    <script>
+
+        let Mainmenu = {
+            template : `<aside>Menu</aside>`,
+            style : "",
+            script :""
+        };
+        let Container =  {
+            template : `<main>
+                            <h3>{{title}}</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro blanditiis natus fugit ipsam, inventore eveniet saepe vero hic commodi. Ab, sequi perferendis repudiandae culpa a illum illo voluptatum vero laboriosam!</p>
+                        </main>`,
+                        data(){
+                            return {
+                                title : "Subtitle",
+                            };
+                        }
+        };
+
+        let Registerform = {
+            template:   `<form @submit.prevent="registerUser">
+                            <input type="text" v-model="input">
+                            <button type="submit">Ajouter</button>
+                        </form>`, 
+                        data(){
+                            return {
+                                input : "toto",
+                            }
+                        },
+                        methods: {
+                            registerUser(){
+                                console.log("registerUser");
+                            }
+                        }
+        }
+
+        let Users = {
+            template : `<div><h4>{{title}}</h4><ul><li v-for="user in users" :key="user.id">{{user.name}}</li></ul></div>`,
+            props : ["title", "users"],
+        }
+
+        const options = {
+            data(){
+                return {
+                    users : [],
+                };
+            },
+            methods : {},
+            components : {
+                Mainmenu,
+                Container,
+                Registerform, 
+                Users
+            },
+            mounted (){
+                fetch("https://jsonplaceholder.typicode.com/users").then(
+                    (response) => {
+                        response.json().then((data) => {
+                            this.users = data;
+                        });
+                    }
+                );
+            } 
+        };
+        Vue.createApp(options).mount("#app");
+    </script>
+
+</body>
+</html>

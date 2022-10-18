@@ -36,3 +36,13 @@ V1.9====================
 V2.1====================
 petite application qui utilise tous ce qui est vu précédement.
 ligne15 "@submit.prevent" écoute submit et enleve le comportement par défaut(preventDefault()), ainsi il n'y a pas de requête http à la validation du formulaire
+
+V3.1====================
+On fait une requête API avec fetch/then et on console.log la donnée
+V3.2====================
+Mounted et beforeUpdate sont des fonctions déclenchés par défaut par vuejs.
+La donnée récupéré par la requête API est assigné à la variable "users" qui les affiche sur le html.
+V3.3====================
+On crée un component MainMenu avec son template. Il est affiché grace a sa balise <MainMenu>.
+V3.4====================
+On crée un autre component Container avec son template. Il possède sa propre data pour le databinding.

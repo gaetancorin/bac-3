@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Vue component</h1>
+      <MainMenu></Mainmenu>
+   
+      <Container></Container>
+
+      <ul>
+        <li v-for="user in users" :key="user.id">{{ user.name }}</li>
+      </ul>
+    </div>
+
+    <script>
+      let Mainmenu = {
+        template: `<aside>Menu</aside>`,
+      };
+
+      let Container = {
+        template:
+        `<main>
+          <h3>{{ title }}</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quisquam numquam atque itaque et iure eveniet magnam ut explicabo reiciendis!</p>
+        </main>`,
+        data() {
+          return {
+            title: 'monsupertitle',
+          };
+        },
+
+      };
+
+
+      const options = {
+        data() {
+          return {
+            users: [],
+          };
+        },
+        methods: {},
+        components: {
+          Mainmenu,
+          Container,
+        },
+        mounted() {
+          console.log("mounted");
+          fetch('https://jsonplaceholder.typicode.com/users')
+          .then((response)=>{
+              response.json().then((data) =>{
+                console.log(data);
+                this.users = data;
+              })
+          })
+        },
+        beforeUpdate(){
+          console.log("beforeUpdate");
+        }
+        };
+            
+      Vue.createApp(options).mount("#app");
+    </script>
+  </body>
+</html>
