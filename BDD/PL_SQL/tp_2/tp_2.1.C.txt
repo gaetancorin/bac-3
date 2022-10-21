@@ -1,0 +1,14 @@
+DECLARE
+caracteristique AVION%ROWTYPE;
+
+BEGIN
+
+SELECT * INTO caracteristique FROM AVION WHERE AVION.IMMAT='A3';
+
+DBMS_OUTPUT.PUT_LINE('caracteristique de l avion A4 : '|| chr(10) ||' immatriculation '|| caracteristique.IMMAT 
+|| chr(10) ||'type d avion '|| caracteristique.TYPAV
+|| chr(10) ||'capacité '|| caracteristique.CAPACITE
+|| chr(10) ||'compagnie '|| caracteristique.COMP
+);
+
+END;
