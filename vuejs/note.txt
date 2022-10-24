@@ -5,6 +5,16 @@ doc vuejs
 https://vuejs.org/guide/introduction.html
 https://fr.vuejs.org/v2/guide/
 
+tutos donné par le prof a voir:
+https://laracasts.com/series/learn-vue-3-step-by-step
+https://vueschool.io/courses/vuejs-fundamentals
+https://www.vuemastery.com/courses/intro-to-vue-3/intro-to-vue3/
+https://developer.mozilla.org/fr/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started
+
+classless.CSS= crée du css automatiquement=
+https://andybrewer.github.io/mvp/
+https://github.com/dbohdan/classless-css
+
 V1.1====================
 • Pour installer vue, on peut utiliser npm ou l'importer avec l'url(en utilisant "defer" en attribut pour le charger après le dom)
 • Vue est un objet qui possède des méthodes.
