@@ -1,0 +1,16 @@
+DECLARE
+
+vol VOLS%ROWTYPE;
+datess DATE;
+BEGIN
+datess := TO_CHAR(SYSDATE);
+
+vol.numvol := 'AF6143';
+vol.date_vol := TO_DATE(SYSDATE);
+vol.immat := 'A3';
+vol.nb_p := 240;
+
+DBMS_OUTPUT.PUT_LINE('date '|| TO_CHAR(vol.date_vol, 'DD-MM-YYYY') );
+
+INSERT INTO vols values (vol.numvol, vol.date_vol, vol.immat, vol.nb_p);
+END;

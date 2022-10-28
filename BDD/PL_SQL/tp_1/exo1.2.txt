@@ -1,10 +1,8 @@
 DECLARE --declaration des variables
-    v_num NUMBER(5) = 255;
+    v_num NUMBER(5) := 255;
     v_nom VARCHAR(50);
     v_date_naiss DATE;
     v_tva NUMBER(5,2);
-
-
 
 BEGIN --script, bloc
     -- Initialisation
@@ -15,4 +13,8 @@ BEGIN --script, bloc
     DBMS_OUTPUT.PUT_LINE('numéro : '||v_num||', nom : '||v_nom);
     DBMS_OUTPUT.PUT_LINE('date de naissance : '||TO_CHAR(v_date_naiss, 'DD/MM/YY'));
     DBMS_OUTPUT.PUT_LINE('TVA : '||v_tva||'%');
+    v_date_naiss := v_date_naiss + 7300;
+    DBMS_OUTPUT.PUT_LINE('date de naissance : '||TO_CHAR(v_date_naiss, 'DD/MM/YYYY'));
+     v_tva := 20 + v_tva*(2/100);
+     DBMS_OUTPUT.PUT_LINE('TVA : '||v_tva||'%');
 END;
