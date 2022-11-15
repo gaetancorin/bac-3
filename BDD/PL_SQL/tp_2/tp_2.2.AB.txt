@@ -35,7 +35,3 @@ dbms_output.put_line('nombre de passager : '||nb_pass);
   dbms_output.put_line('pour le : '||to_char(date_p,'DD/MM/YYYY')||' sur le vol : '|| v_vol);
 
 END;
-
-A///////////
-
-END;
