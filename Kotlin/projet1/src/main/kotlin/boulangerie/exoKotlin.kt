@@ -1,3 +1,5 @@
+package boulangerie
+
 fun main() {
     println(min2(2,3,4))
     println(pair(2))
@@ -18,4 +20,4 @@ fun myPrint(chaine:String) = println("##$chaine##")
 
 
 fun boulangerie(a:Int=0 , b:Int=0 , c:Int=0 ) =
-    (a*prixcroissant) + (b*prixbaguette) + (c*prixsandwich)
+    (a* prixcroissant) + (b* prixbaguette) + (c* prixsandwich)

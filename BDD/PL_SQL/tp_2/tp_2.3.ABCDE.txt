@@ -21,4 +21,5 @@ ALTER TABLE vols DROP CONSTRAINT pk_vols;
 ALTER TABLE vols ADD CONSTRAINT vols_pk PRIMARY KEY (idvol);
 
 E////////////////////////////////////
+définit une clé unique
 ALTER TABLE vols ADD CONSTRAINT vols_unique UNIQUE (idvol,date_vol);

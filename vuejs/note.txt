@@ -15,6 +15,10 @@ classless.CSS= crée du css automatiquement=
 https://andybrewer.github.io/mvp/
 https://github.com/dbohdan/classless-css
 
+router = https://router.vuejs.org/guide/
+
+rendre devoir = https://classroom.google.com/c/NTcwNzQwOTIzODk3 pour fin novembre
+
 V1.1====================
 • Pour installer vue, on peut utiliser npm ou l'importer avec l'url(en utilisant "defer" en attribut pour le charger après le dom)
 • Vue est un objet qui possède des méthodes.

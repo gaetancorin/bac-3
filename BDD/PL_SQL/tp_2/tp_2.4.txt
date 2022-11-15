@@ -1,0 +1,13 @@
+A///////////////////////////////////////
+ALTER TABLE vols
+ADD nb_vols NUMBER;
+ALTER TABLE vols
+ADD dernier_vol DATE;
+ALTER TABLE compagnie
+ADD nb_vols NUMBER;
+ALTER TABLE compagnie
+ADD nb_avions NUMBER;
+ALTER TABLE compagnie
+ADD nb_transportes NUMBER;
+
+B///////////////////////////////////////

@@ -13,6 +13,8 @@ repositories {
 dependencies {
     implementation 'com.squareup.okhttp3:okhttp:+'
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    implementation 'com.squareup.okhttp3:okhttp:+'
+    implementation 'com.google.code.gson:gson:2.3'
 }
 
 test {
