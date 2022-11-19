@@ -1,0 +1,6 @@
+Schema         ==  snake_case           == my_blog
+Entity/Table ==  snake_case/plurial == users
+Column          == snake_case             == created_at
+PrimaryKey    == id                           == id
+Foreign Key   == <plurial_table_name>_id==users_id
+Pivot Table    == <plurial_table_name_has_<plurial_table_name> == users_has_cars

@@ -1,0 +1,55 @@
+students//////////////////////////////
+id					== integer
+first_name		== text
+last_name		== text
+email				== text		 == unique
+password			== text		 == encrypted
+created_at		== timestamp == data logging
+updated_at		== timestamp == data logging
+deleted_at		== timestamp ==soft deletion
+
+teachers////////////////////////////
+id					== integer
+first_name		== text
+last_name		== text
+email				== text		 == unique
+password			== text		 == encrypted
+created_at		== timestamp == data logging
+updated_at		== timestamp == data logging
+deleted_at		== timestamp ==soft deletion
+
+lessons//////////////////////////////////
+id					== integer
+duration			== float
+planned_for		== timestamp
+created_at		== timestamp == data logging
+updated_at		== timestamp == data logging
+deleted_at		== timestamp ==soft deletion
+
+lesson_statements/////////////////////////
+(enoncé des lexons: decouverte, crenaux etc)
+id					== integer
+title				== text
+created_at		== timestamp == data logging
+updated_at		== timestamp == data logging
+deleted_at		== timestamp ==soft deletion
+
+driving_licenses/////////////////////////
+(permis voiture, moto, etc)
+id					== integer
+title				== text
+created_at		== timestamp == data logging
+updated_at		== timestamp == data logging
+deleted_at		== timestamp ==soft deletion
+
+cars////////////////////////////////////
+id					== integer
+title				== text
+brand				== text
+manual			== boolean
+license_plate	== text
+created_at		== timestamp == data logging
+updated_at		== timestamp == data logging
+deleted_at		== timestamp ==soft deletion
+
+
