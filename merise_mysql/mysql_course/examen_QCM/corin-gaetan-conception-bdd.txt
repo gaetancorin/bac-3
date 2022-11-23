@@ -1,0 +1,13 @@
+Gaëtan Corin CDAN IPI
+réponse au QCM Conception de BDD relationnelle
+
+Question 1 = C	
+Question 2 = A, D 
+Question 3 = A 
+Question 4 = A, B, D 
+Question 5 = D
+Question 6 = B, D
+Question 7 = C
+Question 8 = A
+Question 9 = B
+Question 10 = B
