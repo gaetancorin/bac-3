@@ -67,3 +67,11 @@ On crée un autre component "users" qui récupère 2 variables directement de so
 V3.7====================
 On crée un autre component "counter" qui contient un autre component "increment-button".
 Des données sont transmise entre ses 2 component pour incrémenter un compteur à chaque clique
+
+V4.1====================
+utilisation des components version simplifié
+V4.2====================
+utilisation des components version simplifié
+
+V5====================
+routeur
