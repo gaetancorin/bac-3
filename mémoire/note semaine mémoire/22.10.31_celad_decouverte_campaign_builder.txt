@@ -1,0 +1,31 @@
+10.10.2022 CELAD
+découverte campagn builder
+
+Le logiciel CAT fonctionne avec 3 sections importantes.
+CAT = qui permet de créer un fichier formaté contenant une succession d'instructions. Ce fichier est appelé un "test".
+CAT backend = il permet de comprendre les fichiers créer et formaté par CAT pour en réaliser les instructions.
+Il est possible de rassembler plusieurs de ces "test" pour réaliser ce que nous nommerons une 'campagne".
+Il vérifier ensuite que toutes les instructions se sois bien déroulés et renvois les resultats détaillés a CAT monitoring frontend.
+CAT monitoring frontend = il affiche le résultats des campagne ainsi que des tests et instructions réussis ou échoués.
+Il peut afficher les campaigne en cours ainsi que les anciennes campaigne réalisés.
+
+Aujourd'hui, il faut être un développeur pour pouvoir créer des tests ainsi que des campaignes.
+
+Sur le CAT monitoring, il y a une section en cours de développement appelé Campaign Builder.
+L'objectif de cette section est de pouvoir rassembler différents tests directements sur la partie frontend pour que l'utilisateur final puisse créer des campaignes. 
+
+- Réalisation du retroplanning, pokerplanning et répartition des tickets entre collègues.
+
+[ticket2.1 Dict on bench target]
+- Lors des différents tests réalisés sur CAT monitoring, je me suis rendu compte qu'il y avait 3 autres zones ou un dictionnaire apparaissait en tant que { Object object }.
+La suite de mon ticket a consisté a modifier ces 3 autres zones pour sois afficher directement le dictionnaire, sois créer une popup l'affichant.
+
+[ticket3 découverte de campaign builder]
+- J'ai découvert les components du campaign builder, leurs fonctionnement ainsi que leurs liaisons avec le backend.
+- J'ai installer sur mon mongoDB local les "tests" necessaires pour pouvoir réaliser des campaignes, compris l'organisation de CAT sur les objects de mongodb.
+
+[ticket4 CB / paramètre des steps]
+Un "test" contient différents "step".
+Un step représente une instruction(qui contient elle même plusieurs instructions de code).
+Actuellement, sur le CAT monitoring, chaque step peut contenir des arguments en format string, mais sur le backend, il est accepter le string, number, array et booléen.
+L'objectif de ce ticket est de 

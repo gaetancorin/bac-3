@@ -1,0 +1,20 @@
+10.10.2022 CELAD
+découverte de logiciel en interne CAT et des outils appropriés
+
+- Présentation du logiciel CAT par le chef de projet Olivier CRAIG.
+- Présentation des outils utilisés sur le logiciel
+(Gerrit, Jira, Wikidocs, )
+- Installation de tous les outils sur mon ordinateur de travail, créations de compte sur tous ces outils
+- Réalisation du retroplanning avec l'équipe, ainsi que du pokerplanning pour évaluer les nouveaux tickets crées
+On note les tickets en compléxité.
+- Répartition des tickets entre collègues.
+
+[ticket1]
+- Découverte du fonctionnement du monitoring CAT(partie frontend) ainsi que du code. 
+Le frontend est développé en Angular, communique avec un backend python qui utilise une base de donnée MongoDB.
+Le frontend utilise un logger pour le debuggage, ainsi que socket.io pour le transfert de donnée en temps réel du front vers le back, mais aussi de back vers le front. 
+[ticket2 Dict on bench target]
+- Le projet Cat consiste a réaliser des tests, puis de voir le résultat durant le test et en temps réel.
+Sur la page de visualisation des tests, Un component contient les "target" représentant les informations importantes du test. Mais lorsque un dictionnaire est donnée en tant que target, il est affiché {Object object}. 
+L'objectif de ce ticket est de créer un bouton cliquable sur cet emplacement et uniquement lorsqu'il s'agit de dictionnaire.  Ce bouton reverrais vers un component déjà existant  ressemblant à une popup qui affiche le dictionnaire.
+
