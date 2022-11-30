@@ -1,0 +1,8 @@
+classroom = https://classroom.google.com/c/NTcwNzQwOTIzODk3
+vidéo = https://classroom.google.com/c/NTcwNzQwOTIzODk3/a/NTcxMzU0MzI5MDY3/details
+
+framework utilisé par le prof = https://andybrewer.github.io/mvp/
+
+API = https://www.thecocktaildb.com/api.php
+
+emoji = https://html-css-js.com/html/character-codes/
