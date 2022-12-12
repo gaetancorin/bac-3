@@ -1,0 +1,8 @@
+28.11.2022 CELAD
+fixation de bug sur le nightly campaign et exportation des tests sur le nightly campaign
+
+- Fixation des bugs sur les campaignes existantes ocr, servo, X et X.
+- Commentaires des paramètres afin de définir les types qui seront transmis au campaign builder
+- Exportation des tests des différentes campaignes sur la base de donnée MongoDb en local pour pouvoir créer le nightly campaign.
+
+

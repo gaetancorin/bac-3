@@ -1,0 +1,10 @@
+05.12.2022 CELAD
+fonctionnement du nightly campaign sur le campaign builder sur linux et mac
+
+- Création du fichier json de gestion d'environnement pour s'adapter à l'ordinateur.
+- Gestion de detection et ouverture des ports du pc pour détecter le bras robotique à connecter pour faire fonctionner les tests "servo".
+- Exportation des tests sur la base de donnée MongoDb sur le serveur distant
+
+
+
+
