@@ -2,12 +2,12 @@ Gaëtan Corin CDAN IPI
 réponse au QCM Conception de BDD relationnelle
 
 Question 1 = C	
-Question 2 = A, D 
+Question 2 = A, D // MANQUE LE C
 Question 3 = A 
 Question 4 = A, B, D 
 Question 5 = D
 Question 6 = B, D
 Question 7 = C
-Question 8 = A
-Question 9 = B
+Question 8 = A // pas A C'est C
+Question 9 = B // pas B C'est D
 Question 10 = B

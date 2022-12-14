@@ -1,5 +1,0 @@
-live server en ligne = 
-http://livesql.oracle.com
-user=email hotmail
-password
-MDP
