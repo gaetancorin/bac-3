@@ -1,7 +1,7 @@
 A///////////////////////////////////////
-ALTER TABLE vols
+ALTER TABLE avion
 ADD nb_vols NUMBER;
-ALTER TABLE vols
+ALTER TABLE avion
 ADD dernier_vol DATE;
 ALTER TABLE compagnie
 ADD nb_vols NUMBER;
@@ -11,3 +11,15 @@ ALTER TABLE compagnie
 ADD nb_transportes NUMBER;
 
 B///////////////////////////////////////
+UPDATE compagnie SET nb_vols=7, nb_transportes=2422, nb_avions=3  WHERE COMP='AF';
+UPDATE compagnie SET nb_vols=0, nb_transportes='', nb_avions='1' WHERE COMP='AC';
+UPDATE compagnie SET nb_avions=0 WHERE COMP='AL';
+UPDATE compagnie SET nb_avions=0 WHERE COMP='AOM';
+
+UPDATE avion SET nb_vols=3, dernier_vol= TO_DATE('13-01-20','DD-MM-YY') WHERE IMMAT='A1';
+UPDATE avion SET nb_vols=0 WHERE IMMAT='A2';
+UPDATE avion SET nb_vols=0 WHERE IMMAT='A3';
+UPDATE avion SET nb_vols=4, dernier_vol=TO_DATE('16-01-20','DD-MM-YY' ) WHERE IMMAT='A4';
+
+
+

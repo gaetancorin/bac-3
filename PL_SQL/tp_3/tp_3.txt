@@ -1,0 +1,50 @@
+DECLARE
+nomcomp COMPAGNIE.NOM_COMP%TYPE;
+
+BEGIN
+
+SELECT COMPAGNIE.NOM_COMP INTO nomcomp FROM AVION 
+INNER JOIN COMPAGNIE on AVION.COMP = COMPAGNIE.COMP WHERE AVION.IMMAT='A4';
+
+DBMS_OUTPUT.PUT_LINE('compagnie du vol : '|| nomcomp);
+END;
+
+/////////////////////////
+CREATE OR REPLACE PROCEDURE p_aff_comp(immat_cherch IN avion.immat%TYPE) IS
+-- ("IN" signifie paramètre d'ENTREE immat_cherch de type avion.immat%TYPE)
+DECLARE
+nom_cie compagnie.nom_comp%TYPE;
+BEGIN
+	SELECT nom_comp
+	INTO nom_cie
+-- 	("INTO" permet de mettre la valeur dans nom_cie)
+	FROM compagnie
+	WHERE comp in (SELECT comp FROM avion WHERE immat = immat_cherch);
+
+DBMS_OUTPUT.PUT_LINE('nom de la compagnie : '|| nom_cie);
+END;
+//////////////////////////
+ CREATE OR replace PROCEDURE p_aff_comp (immat_cherch IN avion.immat%TYPE)
+IS 
+  nom_cie compagnie.nom_comp%TYPE;
+BEGIN
+    SELECT nom_comp
+    INTO   nom_cie
+    FROM   compagnie
+    WHERE  comp IN (SELECT comp
+                    FROM   avion
+                    WHERE  immat = immat_cherch);
+
+    DBMS_OUTPUT.PUT_LINE('Nom compagnie : '||nom_cie);
+END;
+/
+
+BEGIN
+  p_aff_comp('A1');
+END;
+/ 
+
+
+BEGIN
+p_aff_comp('A1');
+END;
