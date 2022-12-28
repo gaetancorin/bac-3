@@ -1,0 +1,335 @@
+Le langage C++ GAETAN CORIN
+
+ 
+
+1. Une fonction en langage C++ est définie par son nom et le type de valeur retournée.
+
+Vrai ou Faux ?
+
+Vrai. Une fonction en C++ est définie par son nom et le type de valeur qu'elle retourne. 
+
+ 
+
+
+2. Le langage C++ réalise-t-il le passage d’arguments par valeur, par adresse/référence ou les deux ?
+
+ Le langage C++ permet de réaliser le passage d'arguments par valeur ou par référence.
+
+ 
+
+3. En langage C++, le retour de fonction :
+
+
+Doit être d’un type cohérent avec le type du retour de la fonction ?
+
+
+Ne peut retourner qu’un résultat à la fois ?
+
+
+Peut retourner une structure ?
+
+
+
+4. Quelle est la différence entre allocation dynamique et statique
+
+ 
+
+ 
+
+5. Les types suivants existent-ils en langage C++ ? Si oui, comment les déclarer (avec quel(s) mot(s) clef) ?
+
+ 
+
+caractère
+
+
+ 
+
+Maison
+
+ 
+
+entier
+
+
+ 
+
+réel à virgule flottante
+
+
+booléen
+
+
+Voiture
+
+ 
+
+ 
+
+6. L’opérateur d’affectation en langage C++ est un opérateur sans statut particulier. Il est ainsi possible de réutiliser la constante fournie par une affectation. Par exemple, ’a = b = c = 1 ;’ affecte la valeur 1 aux variables c, b et a.
+
+Vrai ou faux ? 
+
+
+ 
+
+7. En langage C, les instructions opérant dans un même espace mémoire sont regroupées dans un bloc entre deux accolades.
+Vrai ou faux ? 
+
+
+ 
+
+8. Une instruction simple est toujours terminée par un point-virgule.
+Vrai ou faux ? 
+
+
+ 
+
+9. En langage C, les instructions de contrôle permettant de faire des choix sont les suivantes :
+
+
+if (expression) instruction else instruction où la partie else est facultative.
+Vrai ou faux ? 
+
+
+if expression then instruction else instruction
+Vrai ou faux ? 
+
+
+switch (expression) {
+case const1 :
+instructions
+...
+case constn :
+instructions
+}
+
+
+ 
+
+Select case expression in
+const1 :
+instructions
+...
+constn :
+instructions
+esac
+
+
+ 
+
+10. En langage C, les instructions de contrôle permettant de faire des boucles sont les suivantes :
+
+for (expression;expression;expression) instruction
+
+
+while (expression) instruction
+
+
+do instruction while (expression)
+
+
+ 
+
+11. Quelle(s) déclaration(s) correspond(ent) à une matrice de N lignes et M colonnes ?
+
+Haut du formulaire
+
+ 
+
+float Identificateur[N][M] ;
+
+ 
+
+float Identificateur [M-1][N-1] ;
+
+ 
+
+float Identificateur1 [M-1] Identificateur2 [N-1] ;
+
+ 
+
+float Identificateur1 [N-1] Identificateur2 [M-1] ; 
+
+
+1
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+12. Pour accéder à la troisième case du vecteur Carte, on utilise l'instruction :
+
+ 
+
+Carte [3] ;
+
+ 
+
+Carte [2] ;
+
+ 
+
+Carte {2} ;
+
+ 
+
+Carte {3} ; 
+
+ 
+
+Carte (2) ;
+
+2
+
+ 
+
+ 
+
+ 
+
+13. on définit les variables de la manière suivante :
+
+int in;      int tabint[10];     char car;     int *ptint;     char *ptchar;     Lesquelles de ces expressions ont valides :
+
+ 
+
+ptint = &in; *ptint = 12;
+
+ 
+
+ptint=&tabint; *ptint=4;
+
+ 
+
+ptchar = &car; *ptchar = 'a';
+
+ 
+
+tabint[in] est équivalent a *(tabint + in)
+
+ 
+
+ptint=tabint; *ptint=4;
+
+1, 3, 4, 5
+
+ 
+
+ 
+
+1
+
+15. Pour accéder à la case située à la 2éme ligne et la 3éme colonne de la matrice T, quelle est la bonne syntaxe?
+
+Haut du formulaire
+
+ 
+
+T [2,1] ;
+
+ 
+
+T [1,2] ;
+
+ 
+
+T [2] [1] ;
+
+ 
+
+T [1] [2] ;
+
+ 
+
+T (2, 1) ;
+
+2
+
+ 
+
+16. En langage C++, dans une chaîne de caractères, le premier caractère a pour indice :
+
+ 
+
+0
+
+ 
+
+1
+
+ 
+
+17. Peut-on changer la taille d'un tableau en cours d'exécution du programme ?
+
+Haut du formulaire
+
+ 
+
+Oui, en affectant une nouvelle valeur à la variable définissant la taille du tableau.
+
+ 
+
+Non, c'est impossible. 
+
+ 
+
+Oui, en redéfinissant la valeur de la constante indiquant la taille du tableau.
+
+ 
+
+18. On considère la déclaration suivante :char *ptchar, ptchar peut contenir des valeurs qui sont :
+
+ 
+
+Des valeurs de variables de type caractère (char).
+
+ 
+
+Des adresses de variables de type caractère (char).
+
+ 
+
+ 
+
+ 
+
+19. Comment fait-on pour déclarer un tableau dont les éléments sont de types différents ?
+
+ 
+
+Type_case répertoire [M] ; et on précise le type des variables à chaque entrée.
+
+ 
+
+C'est impossible.
+
+ 
+
+20. Qui a créé le langage C++ ?
+
+ 
+
+Dennis Ritchie
+
+ 
+
+Ken Thompson
+
+ 
+
+Bjarne Stroustrup           
+
+ 
+
+James Gosling
