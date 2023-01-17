@@ -1,3 +1,6 @@
 site prof = https://www.amonteiro.fr/android
 nom user= CORIN_GAETAN
 password = mdp IPI
+
+repository exercice android du prof =
+https://github.com/Anth06ny/22_10_CDAN 
