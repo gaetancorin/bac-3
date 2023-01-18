@@ -1,0 +1,29 @@
+GESTION DES BRANCHES=======================
+git branch = voir liste des branches
+git checkout -b <nomnouvelbranche> = créer une nouvelle branche
+git checkout <nombranche> = se déplacer de branche
+
+CREER UN COMMIT==============================
+git add * = sauvegarder les modification
+git commit -m "intitulé du commit" = créer un commit
+controle+x pour sortir , Y pour yes et save + enter
+git review = push l'état courant de la branche
+
+STASH=================================================================
+git stash list = voir la liste des stashs
+git stash show = voir le dernier stash
+git stash = mettre tous les fichiers non add en stash
+git stash push -- monfichiermodifier.txt = rajouter le fichier sur un nouveau stash
+git stash pop = recupérer tous les fichiers du dernier stash en supprimer le stash
+git stash apply = récupérer tous les fichiers du dernier stash sans supprimer le stash
+
+RETOUR EN ARRIERE=====================================================
+git reflog = voir les modifs faire sur git
+git reset --soft <idchangement> = revenir au changement
+
+METTRE A JOUR LA MASTER ET METTRE A JOUR UNE BRANCHE===============
+aller sur la branche master, git pull
+aller sur la branche à midifier, git rebase origin/master
+
+PULL nouveau master=======================================
+git pull
