@@ -1,5 +1,6 @@
 GESTION DES BRANCHES=======================
 git branch = voir liste des branches
+git pull <url> nomdelabranche = recupérer une branche deja créer
 git checkout -b <nomnouvelbranche> = créer une nouvelle branche
 git checkout <nombranche> = se déplacer de branche
 

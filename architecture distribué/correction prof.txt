@@ -1,2 +1,7 @@
 correction prof = 
 https://github.com/thomas-clamon/2023-ArchitectureDistribu-
+
+faire un git clone, 
+ajouter "maven" en allant sur le fichier pom.xml, clique droit, ajouter maven
+aller sur "maven", example/livecycle. Lancer clean, Lancer install
+Puis demarrer l'application
