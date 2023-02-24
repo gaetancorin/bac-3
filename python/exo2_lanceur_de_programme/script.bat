@@ -1,1 +1,0 @@
-"C:\Users\gaeta\AppData\Local\Programs\Microsoft VS Code\Code.exe"

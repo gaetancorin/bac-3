@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b1bc881-3be6-47dc-8b4a-74dc566a65d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -28,6 +28,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2KaCsNyAIbYM9BPsVNpm7mnp9h7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,11 +42,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/licence3/architecture distribué/projet_bdd/demo",
+    "last_opened_file_path": "C:/xampp/htdocs/licence3/architecture distribué/correction prof",
     "spring.configuration.checksum": "1a79a4d60de6718e8e5b326e338ae533"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ExampleApplication">
+    <configuration name="ExampleApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="correction prof" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.example.ExampleApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ExampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="example" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.example.ExampleApplication" />
@@ -65,6 +73,7 @@
       <workItem from="1674203514351" duration="3180000" />
       <workItem from="1674210131903" duration="2275000" />
       <workItem from="1674216614431" duration="560000" />
+      <workItem from="1677054558025" duration="1210000" />
     </task>
     <servers />
   </component>
