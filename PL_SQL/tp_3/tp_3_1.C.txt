@@ -1,0 +1,17 @@
+CREATE OR replace PROCEDURE p_ajout_avion(immat IN avion.immat%TYPE, typav IN avion.typav%TYPE, capacite IN avion.capacite%TYPE, comp IN avion.comp%TYPE, resultat OUT NUMBER) 
+IS 
+BEGIN
+    INSERT INTO avion
+    VALUES (immat, typav, capacite, comp, NULL, NULL);
+    resultat:=1;
+    COMMIT;
+END;
+
+/
+DECLARE
+  resultat NUMBER(1);
+BEGIN
+  p_ajout_avion('A1', 'A380', '3333', 'AF', resultat);
+  DBMS_OUTPUT.PUT_LINE('L etat est à : '||resultat);
+END;
+/

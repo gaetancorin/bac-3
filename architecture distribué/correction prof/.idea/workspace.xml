@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b1bc881-3be6-47dc-8b4a-74dc566a65d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../PL_SQL/tp_3/tp_3.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/xampp/htdocs/licence3/architecture distribué/correction prof",
-    "spring.configuration.checksum": "1a79a4d60de6718e8e5b326e338ae533"
+    "spring.configuration.checksum": "9f48c454c3dca85d6decf9a55a71a416"
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.ExampleApplication">
@@ -74,6 +73,7 @@
       <workItem from="1674210131903" duration="2275000" />
       <workItem from="1674216614431" duration="560000" />
       <workItem from="1677054558025" duration="1210000" />
+      <workItem from="1678692983363" duration="508000" />
     </task>
     <servers />
   </component>

@@ -1,0 +1,19 @@
+CREATE OR replace PROCEDURE p_aff_comp (immat_cherch IN avion.immat%TYPE)
+IS 
+  nom_cie compagnie.nom_comp%TYPE;
+BEGIN
+    SELECT nom_comp
+    INTO   nom_cie
+    FROM   compagnie
+    WHERE  comp IN (SELECT comp
+                    FROM   avion
+                    WHERE  immat = immat_cherch);
+
+    DBMS_OUTPUT.PUT_LINE('Nom compagnie : '||nom_cie);
+END;
+/
+
+BEGIN
+  p_aff_comp('A1');
+END;
+/ 
