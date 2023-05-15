@@ -1,0 +1,16 @@
+pour expo login:
+ne marche que sur un user
+user: gaetancorin
+mdp:05xxxxxx-xx
+
+
+npx create-expo-app monAppSuper --template
+(choisir typescript navigation)
+
+npx expo install react-dom react-native-web @expo/webpack-config
+
+npx expo start
+
+
+
+

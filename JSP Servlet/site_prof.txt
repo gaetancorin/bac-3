@@ -1,0 +1,6 @@
+site prof = https://www.amonteiro.fr/jee/index.html#/
+nom user= CORIN_GAETAN
+password = mdp IPI CORgae28)*
+
+repository exercice android du prof =
+https://github.com/Anth06ny/a22_10_CDAN_SPRING
