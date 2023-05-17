@@ -11,7 +11,7 @@ accéder avec port 21 pour ftp
 Username: 
 osboxes
 Password: 
-osboxes.org 
+osboxes.org cd ..
 
 accès avec windows=
 ssh osboxes@192.168.56.12
@@ -39,3 +39,10 @@ python3 manage.py runserver 0.0.0.0:8000
 sur windows aller sur:
 http://192.168.56.12:8000/sondage/
 
+se connecter en SSH avec VsCode =
+extension remote -SSH
+aller sur remote explorer
+entrer osboxes@192.168.56.12
+password user
+choisir le folder a afficher
+password user

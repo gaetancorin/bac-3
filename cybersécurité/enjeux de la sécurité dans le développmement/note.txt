@@ -1,0 +1,19 @@
+vulnérabilité des données
+modification des données
+disponibilité des données
+
+Définitions des failles et vulnérabilités
+
+faille logiciel =
+c'est un bug, sois de conception, sois de programmation
+
+type d'erreur que l'on peut rencontrer :
+value error = on essaye de mettre une valeur dans un mauvais typage, on dit erreur de transtypage.
+index type of range = quand on fais défiler un tableau sur un index qui n'éxiste pas, on dit erreur d'indexation
+erreur de segmentation = on est sortie de la zone memoire dans lequel on essaye d'éxecuter quelque chose.
+
+les vulnérabilités logiciels sont exploitation volontaire et malveillante de faille logiciel afin d'impacter les critère de sécurité
+
+tout système est faillible, toute faille peut devenir une vulnérabilité logicielles.(faille exploité)
+
+
