@@ -1,0 +1,1 @@
+créer fichier ".cap" (comme .txt), qui enregistre les captures

@@ -1,4 +1,4 @@
-site prof = https://www.amonteiro.fr/jee/index.html#/
+site prof = https://www.amonteiro.fr/jee
 nom user= CORIN_GAETAN
 password = mdp IPI CORgae28)*
 

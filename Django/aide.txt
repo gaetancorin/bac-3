@@ -40,7 +40,7 @@ sur windows aller sur:
 http://192.168.56.12:8000/sondage/
 
 se connecter en SSH avec VsCode =
-extension remote -SSH
+installer extension remote -SSH
 aller sur remote explorer
 entrer osboxes@192.168.56.12
 password user
