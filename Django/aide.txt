@@ -11,19 +11,19 @@ accéder avec port 21 pour ftp
 Username: 
 osboxes
 Password: 
-osboxes.org cd ..
+osboxes.org
 
 accès avec windows=
 ssh osboxes@192.168.56.12
 
 Pour créer la Vm=
- virtualisation/ aide VM.odt
+cf dossier licence3/virtualisation/aide VM.odt
 Pour SSH =
-  virtualisation/ aide VM.odt
+ cf dossier licence3 virtualisation/aide VM.odt
 Pour FTP=
-  viirtualisation/cours FTP
+ cf dossier licence3/virtualisation/cours FTP
 (ftp: lancer sur filezilla directement
-192.168.56.12 osboxes osboxes.org)
+192.168.56.12 ||  osboxes ||  osboxes.org)
 
 sur VM:
 installer python, pip, django

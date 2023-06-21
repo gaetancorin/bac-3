@@ -1,0 +1,89 @@
+#page1{
+    width: 1350px;
+    margin: 40px auto;
+    margin-left: 40px;
+    background-color: pink;
+    padding: 40px;
+  border: 60px;
+  text-align: center;
+}
+
+
+#carre{
+
+    width: 1350px;
+    height: 300px auto;
+    margin: 40px auto;
+    margin-left: 40px;
+    margin-top: 150px;
+    background-color: #dad1d1;
+    padding: 40px;
+    border: 60px;
+}
+
+
+.sublist {
+    
+    width: 1320px;
+    height: 80px;
+    margin: 40px auto;
+    margin-left: 10px;
+    background-color: #e87a7a;
+    padding: 5px;
+    border: 60px;
+}
+
+body {
+    overflow-y: scroll;
+    
+}
+
+.bouton{
+    margin-left: 950px;
+    top: 90px;
+    background-color: rgb(11, 231, 11);
+}
+
+
+#carre2{
+    
+    width: 1350px;
+    height: 300px auto;
+    margin: 40px auto;
+    margin-left: 40px;
+    margin-top: 150px;
+    background-color: #dad1d1;
+    padding: 40px;
+    border: 60px;
+}
+
+#carre3{
+    
+    width: 1100px;
+    height: 300px auto;
+    margin: 40px auto;
+    margin-left:80px;
+    margin-top: 100px;
+    background-color:#e87a7a;
+    padding: 40px;
+    border: 60px;
+}
+
+#form{
+    width: 500px;
+    height:2px;
+    margin: 40px auto;
+    margin-left: 40px;
+    padding: 20px;
+    border: 60px;
+    
+}
+
+#bouton3{
+    padding: 10px;
+    margin-left: 500px;
+    top: 90px;
+    background-color: rgb(11, 231, 11);
+}
+
+
