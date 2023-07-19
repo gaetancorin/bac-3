@@ -1,0 +1,30 @@
+@startuml
+node prod {
+    node srv_app{
+        node django_project {        
+            component polls        
+            component admin        
+        }      
+    }
+    node srv_db{
+        database pg_db
+    }
+    node srv_web{
+        node nginx 
+    }
+    node srv_mail{
+        node postfix
+    }
+    node srv_rabbmq{
+        queue mailq 
+    }
+}   
+node browser
+    
+pg_db -(0-- django_project : 5432
+django_project --(0-- nginx : 8002     
+nginx -(0-- browser : 443
+
+mailq --(0-- django_project : port
+mailq --(0-- postfix : port
+@enduml

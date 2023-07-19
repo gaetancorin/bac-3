@@ -1,0 +1,4 @@
+aller dans /user/local/ et créer le dossier tp_depl_imdw276
+
+déployer l'archive = 
+sudo tar xzvf tp_depl_imdw276-1.0.1.tar.gz -C /usr/local/tp_depl_imdw276/

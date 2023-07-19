@@ -1,0 +1,37 @@
+CREATE TABLE compagnie
+(comp VARCHAR(4), nom_comp VARCHAR(30),nb_vols NUMBER, nb_transportes NUMBER,
+nb_avions NUMBER,
+CONSTRAINT pk_compagnie PRIMARY KEY(comp));
+
+CREATE TABLE avion
+(immat VARCHAR(6), typav VARCHAR(5),
+capacite NUMBER, comp VARCHAR(4), nb_vols NUMBER, dernier_vol DATE,
+CONSTRAINT pk_avion PRIMARY KEY(immat),
+CONSTRAINT fk_comp FOREIGN KEY(comp)
+        REFERENCES compagnie(comp));
+
+CREATE TABLE vols
+(numvol CHAR(6), date_vol DATE, immat VARCHAR(6), nb_p NUMBER, idvols NUMBER, 
+CONSTRAINT pk_vols PRIMARY KEY (idvols),
+CONSTRAINT un_vols UNIQUE (numvol,date_vol),
+CONSTRAINT fk_vols_immat FOREIGN KEY(immat)
+        REFERENCES avion(immat));
+
+INSERT INTO compagnie    VALUES ('AF', 'Air France',7,2422,3);
+INSERT INTO compagnie    VALUES ('AC', 'Air China',0,1,0);
+INSERT INTO compagnie    VALUES ('AL', 'Air Liberté',0,0,0);
+INSERT INTO compagnie    VALUES ('AOM', 'Air Outre-Mer',0,0,0);
+
+INSERT INTO avion VALUES ('A1','A320',170, 'AF',3,to_date('13-01-2022','DD-MM-YYYY'));
+INSERT INTO avion VALUES ('A2','B727',140, 'AC',0,NULL);
+INSERT INTO avion VALUES ('A3','B747',400, 'AF',0,NULL);
+INSERT INTO avion VALUES ('A4','A380',540, 'AF',4,to_date('16-01-2022','DD-MM-YYYY'));
+
+INSERT INTO vols VALUES ('AF6143',to_date('10-01-2022','DD-MM-YYYY'),'A1',120,1);
+INSERT INTO vols VALUES ('AF6143',to_date('11-01-2022','DD-MM-YYYY'),'A1',130,2);
+INSERT INTO vols VALUES ('AF6143',to_date('13-01-2022','DD-MM-YYYY'),'A1',105,3);
+
+INSERT INTO vols VALUES ('AF6146',to_date('13-01-2022','DD-MM-YYYY'),'A4',530,4);
+INSERT INTO vols VALUES ('AF6146',to_date('14-01-2022','DD-MM-YYYY'),'A4',500,5);
+INSERT INTO vols VALUES ('AF6146',to_date('15-01-2022','DD-MM-YYYY'),'A4',534,6);
+INSERT INTO vols VALUES ('AF6146',to_date('16-01-2022','DD-MM-YYYY'),'A4',503,7);

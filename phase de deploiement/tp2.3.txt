@@ -1,0 +1,16 @@
+fichier DEPLOY.SH=
+
+#! /bin/bash
+
+CHEMINSCRIPT=$(realpath $0)
+EMPLACEMENT=$(dirname $CHEMINSCRIPT)
+VERSION=$(cat $EMPLACEMENT/VERSION)
+echo deploy.sh version $VERSION
+echo emplacement=$EMPLACEMENT
+tar czf ../tp_depl_imdw276-$VERSION.tar.gz *
+
+
+LES 3 LIGNES DE COMMANDES A ECRIRE DANS LE TERMINAL DANS LE DOSSIER tp_depl_imdw276 =
+sh deploy.sh
+echo "1.0.1" > "VERSION"
+sh deploy.sh

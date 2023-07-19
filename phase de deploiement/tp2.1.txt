@@ -1,0 +1,4 @@
+tar tzf ../tpdepl_imdw276-1.0.1.tar.gz pour lire 
+tar czf ../tpdepl_imdw276-1.0.1.tar.gz *   pour ecrire
+
+ tar tzf tp_depl_imdw276-1.0.0.tar.gz

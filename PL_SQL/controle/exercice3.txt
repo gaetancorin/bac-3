@@ -1,0 +1,33 @@
+A============================================================
+
+DECLARE
+  v_immat avion.immat%TYPE;
+BEGIN
+  SELECT immat
+  INTO v_immat
+  FROM vols
+  WHERE date_vol = (SELECT MAX(date_vol) FROM vols);
+
+  DBMS_OUTPUT.PUT_LINE('immatriculation de l avion ayant la date de vol la plus récente : ' || v_immat);
+END;
+
+B===============================================================
+
+DECLARE
+  capacite_a4 avion.capacite%TYPE;
+  nb_passagers vols.nb_p%TYPE;
+BEGIN
+  SELECT capacite
+  INTO capacite_a4
+  FROM avion
+  WHERE immat = 'A4';
+
+  SELECT SUM(nb_p)
+  INTO nb_passagers
+  FROM vols
+  WHERE immat IN (SELECT immat FROM avion WHERE comp <> 'AF');
+
+  DBMS_OUTPUT.PUT_LINE('Capacité de l avion immatriculé A4 :' || capacite_a4);
+  DBMS_OUTPUT.PUT_LINE('Nombre total de passagers transportés par les compagnies sauf Air France : ' || nb_passagers);
+END;
+

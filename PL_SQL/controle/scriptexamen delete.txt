@@ -1,0 +1,7 @@
+drop table VOLS;
+drop table COMPAGNIE;
+drop table AVION;
+
+SELECT * FROM VOLS;
+SELECT * FROM AVION;
+SELECT * FROM COMPAGNIE;

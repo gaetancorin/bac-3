@@ -1,0 +1,15 @@
+@startuml
+node PC {    
+    database pg_db    
+    node nginx    
+    node django_project {        
+        component polls        
+        component admin        
+    }    
+    node browser    
+    pg_db -(0-- django_project : 5432}
+    django_project --(0-- nginx : 8002     
+    nginx -(0-- browser : 80    
+    
+}
+@enduml

@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b1bc881-3be6-47dc-8b4a-74dc566a65d8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../PL_SQL/tp_3/tp_3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../virtualisation/aide VM.odt" beforeDir="false" afterPath="$PROJECT_DIR$/../../virtualisation/aide VM.odt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +44,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/xampp/htdocs/licence3/architecture distribué/correction prof",
+    "last_opened_file_path": "C:/xampp/htdocs/licence3/architecture distribué/axemple",
     "spring.configuration.checksum": "9f48c454c3dca85d6decf9a55a71a416"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RunManager" selected="Spring Boot.ExampleApplication">
@@ -54,7 +62,8 @@
       </method>
     </configuration>
     <configuration name="ExampleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="example" />
+      <option name="ACTIVE_PROFILES" />
+      <module name="correction prof" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.example.ExampleApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -74,6 +83,13 @@
       <workItem from="1674216614431" duration="560000" />
       <workItem from="1677054558025" duration="1210000" />
       <workItem from="1678692983363" duration="508000" />
+      <workItem from="1689751402030" duration="945000" />
+      <workItem from="1689752371746" duration="970000" />
+      <workItem from="1689753362036" duration="262000" />
+      <workItem from="1689753637543" duration="463000" />
+      <workItem from="1689754123477" duration="1213000" />
+      <workItem from="1689757464031" duration="111000" />
+      <workItem from="1689758934875" duration="129000" />
     </task>
     <servers />
   </component>

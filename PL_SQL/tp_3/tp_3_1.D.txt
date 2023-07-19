@@ -1,0 +1,19 @@
+CREATE OR replace PROCEDURE p_ajout_avion(numero IN vols.numvol%TYPE, immat IN vols.immat%TYPE,  nbpassagers IN vols.nb_p%TYPE, resultat OUT NUMBER) 
+IS 
+comp avion.comp%TYPE;
+BEGIN
+    INSERT INTO vols
+    VALUES (numero, sysdate, immat, nbpassagers);
+    resultat:=1;
+    COMMIT;
+    DBMS_OUTPUT.PUT_LINE('Vol inséré dans la base');
+END;
+
+/
+DECLARE
+  resultat NUMBER(1);
+BEGIN
+  p_ajout_avion('A4', 'AF6143', '520', resultat);
+  DBMS_OUTPUT.PUT_LINE('L etat est à : '||resultat);
+END;
+/

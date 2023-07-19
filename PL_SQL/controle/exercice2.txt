@@ -1,0 +1,63 @@
+A============================================================
+
+CREATE PROCEDURE p_ajout_compagnie(
+  p_immat IN VARCHAR2,
+  p_nom IN VARCHAR2,
+  p_nb_vols IN NUMBER,
+  p_nb_transportes IN NUMBER,
+  p_nb_avions IN NUMBER
+)
+IS
+BEGIN
+  INSERT INTO compagnie(comp, nom_comp, nb_vols, nb_transportes, nb_avions)
+  VALUES (p_immat, p_nom, p_nb_vols, p_nb_transportes, p_nb_avions);
+
+  COMMIT;
+  DBMS_OUTPUT.PUT_LINE('Compagnie ajoutée avec succès.');
+END;
+
+
+BEGIN
+  p_ajout_compagnie('AA', 'Air Afrique', 0, 0, 0);
+END;
+
+
+B===============================================================
+
+CREATE FUNCTION f_nb_p(param_numvol IN CHAR)
+  RETURN NUMBER
+IS
+  number_passagers NUMBER;
+BEGIN
+  SELECT SUM(nb_p)
+  INTO number_passagers
+  FROM vols
+  WHERE numvol = param_numvol;
+
+  RETURN number_passagers;
+END;
+/
+
+
+DECLARE
+  v_nb_passagers NUMBER;
+BEGIN
+  v_nb_passagers := f_nb_p('AF6143');
+  DBMS_OUTPUT.PUT_LINE('Les vols A1 contiennent ' || v_nb_passagers || ' passagers');
+END;
+
+C============================================
+
+CREATE PROCEDURE f_modif_compagnie(para_comp IN compagnie.comp%TYPE, para_nb_avions IN NUMBER)
+IS
+BEGIN
+  UPDATE compagnie
+  SET nb_avions = para_nb_avions
+  WHERE comp = para_comp;
+END;
+
+BEGIN
+  f_modif_compagnie('AA', 1);
+  COMMIT;
+END;
+

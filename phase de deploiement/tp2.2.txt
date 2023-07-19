@@ -1,0 +1,16 @@
+#! /bin/bash
+
+CHEMINSCRIPT=$(realpath $0)
+EMPLACEMENT=$(dirname $CHEMINSCRIPT)
+VERSION=$(cat $EMPLACEMENT/VERSION)
+echo deploy.sh version $VERSION
+echo emplacement=$EMPLACEMENT
+
+lancer deploy.sh = sh deploy.sh
+
+La variable CHEMINSCRIPT prend la valeur du chemin absolue du script
+/home/osboxes/tp_depl_imdw276/deploy.sh
+La variable EMPLACEMENT prend la valeur du chemin du script jusqu'au dossier.
+/home/osboxes/tp_depl_imdw276/
+La variable VERSION prend la valeur du contenu du fichier VERSION.
+1.0.1

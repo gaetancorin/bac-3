@@ -1,0 +1,16 @@
+DECLARE
+  v_max_capacity avion%ROWTYPE;
+BEGIN
+  SELECT *
+  INTO v_max_capacity
+  FROM avion
+  WHERE capacite = (SELECT MAX(capacite) FROM avion);
+
+  DBMS_OUTPUT.PUT_LINE('Avion avec la plus grande capacité :');
+  DBMS_OUTPUT.PUT_LINE('Immatriculation : ' || v_max_capacity.immat);
+  DBMS_OUTPUT.PUT_LINE('Type d avion : ' || v_max_capacity.typav);
+  DBMS_OUTPUT.PUT_LINE('Capacité : ' || v_max_capacity.capacite);
+  DBMS_OUTPUT.PUT_LINE('Compagnie : ' || v_max_capacity.comp);
+  DBMS_OUTPUT.PUT_LINE('Nombre de vols : ' || v_max_capacity.nb_vols);
+  DBMS_OUTPUT.PUT_LINE('Dernier vol : ' || v_max_capacity.dernier_vol);
+END;
