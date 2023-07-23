@@ -1,0 +1,25 @@
+Nombre de pages (sans annexes) : entre 50 et 70 pages
+
+Choses à avoir :
+Page de garde
+Table des matières
+Tables des illustrations
+Citations de bibliographies
+Tableaux de compétences avec références
+Titres formatés (pas de formatage manuel)
+Intro à chaque partie
+Introduction
+Conclusion (~10%)
+Bibliographie
+Glossaire
+CV
+Annexes
+
+Mise en page :
+Police 12
+Interligne <= 1.5
+Inter-paragraphes <= 2
+Marges entre 2 et 3cm (compris)
+Illustrations légendées et décrites
+
+Abréviations : Définir à la première occurence puis renvoyer vers le glossaire

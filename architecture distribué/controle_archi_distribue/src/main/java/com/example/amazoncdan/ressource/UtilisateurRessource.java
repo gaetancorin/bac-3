@@ -27,5 +27,35 @@ public class UtilisateurRessource {
         return new ResponseEntity(utilisateurService.countUtilisateursTypes(), HttpStatus.OK);
     }
 
+    @GetMapping("getutilisateur/{id}")
+    public ResponseEntity getUtilisateurById(@PathVariable String id){
+
+        Integer ID = null;
+        try{
+            ID = Integer.parseInt(id);
+        } catch (NumberFormatException e){
+            return new ResponseEntity("L'Id n'as pas le bon format", HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity(utilisateurService.getUtilisateurById(Number ID), HttpStatus.OK);
+    }
+
+
+    @GetMapping("getutilisateurdata/{id}")
+    public ResponseEntity getutilisateurdata(@PathVariable String id){
+
+        Integer ID;
+        try{
+            ID = Integer.parseInt(id);
+        } catch (NumberFormatException e){
+            return new ResponseEntity("L'Id n'as pas le bon format", HttpStatus.BAD_REQUEST);
+        }
+        return new ResponseEntity(utilisateurService.getUtilisateurData(Number ID), HttpStatus.OK);
+    }
+
+    @GetMapping("gettop3chauffeurs")
+    public ResponseEntity gettop3chauffeurs(){
+        return new ResponseEntity(utilisateurService.getTop3Chauffeurs(), HttpStatus.OK);
+    }
+
 
 }

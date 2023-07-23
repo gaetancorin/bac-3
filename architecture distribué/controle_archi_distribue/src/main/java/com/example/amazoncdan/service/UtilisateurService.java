@@ -1,6 +1,7 @@
 package com.example.amazoncdan.service;
 
 import com.example.amazoncdan.dto.UtilisateurDto;
+import com.example.amazoncdan.dto.ChauffeurDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -100,5 +101,39 @@ public class UtilisateurService {
             e.printStackTrace();
             return new int[]{0, 0, 0};
         }
+    }
+
+    public UtilisateurDto getUtilisateurData(int id) {
+        String sql = "SELECT utilisateur.prenom AS prenom_utilisateur, " +
+                "COUNT(course.id) AS nombre_courses, " +
+                "SUM(course.distance) AS total_distance " +
+                "FROM utilisateur " +
+                "LEFT JOIN course ON utilisateur.id = course.idclient OR utilisateur.id = course.idchauffeur " +
+                "WHERE utilisateur.id = ? " +
+                "GROUP BY utilisateur.prenom";
+
+        try {
+            return jdbcTemplate.queryForObject(sql, new Object[]{id}, new BeanPropertyRowMapper<>(UtilisateurDto.class));
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public List<ChauffeurDto> getTop3Chauffeurs() {
+        String sql = "SELECT utilisateur.prenom AS prenom, " +
+                "SUM(course.distance) AS distanceTotale " +
+                "FROM utilisateur " +
+                "INNER JOIN course ON utilisateur.id = course.idchauffeur " +
+                "GROUP BY utilisateur.prenom " +
+                "ORDER BY distanceTotale DESC " +
+                "LIMIT 3";
+
+        return jdbcTemplate.query(sql, (rs, rowNum) -> {
+            ChauffeurDto chauffeurDto = new ChauffeurDto();
+            chauffeurDto.setPrenom(rs.getString("prenom"));
+            chauffeurDto.setDistanceTotale(rs.getInt("distanceTotale"));
+            return chauffeurDto;
+        });
     }
 }
