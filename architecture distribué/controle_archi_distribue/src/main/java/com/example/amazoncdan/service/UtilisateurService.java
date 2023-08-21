@@ -69,39 +69,39 @@ public class UtilisateurService {
         }
     }
 
-    public int[] countUtilisateursTypes() {
-        String sql = "SELECT type, COUNT(*) AS count FROM utilisateur GROUP BY type";
-
-        try {
-            List<Map<String, Object>> rows = jdbcTemplate.queryForList(sql);
-
-            int[] counts = new int[3];
-
-            for (Map<String, Object> row : rows) {
-                String type = (String) row.get("type");
-                int count = ((Number) row.get("count")).intValue();
-
-                switch (type) {
-                    case "client":
-                        counts[0] = count;
-                        break;
-                    case "motard":
-                        counts[1] = count;
-                        break;
-                    case "chauffeur":
-                        counts[2] = count;
-                        break;
-                    default:
-                        break;
-                }
-            }
-
-            return counts;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return new int[]{0, 0, 0};
-        }
-    }
+//    public int[] countUtilisateursTypes() {
+//        String sql = "SELECT type, COUNT(*) AS count FROM utilisateur GROUP BY type";
+//
+//        try {
+//            List<Map<String, Object>> rows = jdbcTemplate.queryForList(sql);
+//
+//            int[] counts = new int[3];
+//
+//            for (Map<String, Object> row : rows) {
+//                String type = (String) row.get("type");
+//                int count = ((Number) row.get("count")).intValue();
+//
+//                switch (type) {
+//                    case "client":
+//                        counts[0] = count;
+//                        break;
+//                    case "motard":
+//                        counts[1] = count;
+//                        break;
+//                    case "chauffeur":
+//                        counts[2] = count;
+//                        break;
+//                    default:
+//                        break;
+//                }
+//            }
+//
+//            return counts;
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            return new int[]{0, 0, 0};
+//        }
+//    }
 
     public UtilisateurDto getUtilisateurData(int id) {
         String sql = "SELECT utilisateur.prenom AS prenom_utilisateur, " +

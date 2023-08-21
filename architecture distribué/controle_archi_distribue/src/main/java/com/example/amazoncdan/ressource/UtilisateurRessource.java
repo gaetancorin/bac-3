@@ -22,10 +22,10 @@ public class UtilisateurRessource {
        return new ResponseEntity(utilisateurService.getAllUtilisateurs(), HttpStatus.OK);
     }
 
-    @GetMapping("countutilisateurstypes")
-    public ResponseEntity countutilisateurstypes(){
-        return new ResponseEntity(utilisateurService.countUtilisateursTypes(), HttpStatus.OK);
-    }
+//    @GetMapping("countutilisateurstypes")
+//    public ResponseEntity countutilisateurstypes(){
+//        return new ResponseEntity(utilisateurService.countUtilisateursTypes(), HttpStatus.OK);
+//    }
 
     @GetMapping("getutilisateur/{id}")
     public ResponseEntity getUtilisateurById(@PathVariable String id){
@@ -36,7 +36,7 @@ public class UtilisateurRessource {
         } catch (NumberFormatException e){
             return new ResponseEntity("L'Id n'as pas le bon format", HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity(utilisateurService.getUtilisateurById(Number ID), HttpStatus.OK);
+        return new ResponseEntity(utilisateurService.getUtilisateurById( ID), HttpStatus.OK);
     }
 
 
@@ -49,7 +49,7 @@ public class UtilisateurRessource {
         } catch (NumberFormatException e){
             return new ResponseEntity("L'Id n'as pas le bon format", HttpStatus.BAD_REQUEST);
         }
-        return new ResponseEntity(utilisateurService.getUtilisateurData(Number ID), HttpStatus.OK);
+        return new ResponseEntity(utilisateurService.getUtilisateurData( ID), HttpStatus.OK);
     }
 
     @GetMapping("gettop3chauffeurs")

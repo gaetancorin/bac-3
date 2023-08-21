@@ -46,3 +46,11 @@ entrer osboxes@192.168.56.12
 password user
 choisir le folder a afficher
 password user
+
+note fx:
+sudoer = donner des droits de sudo aux users
+/etc/sudoers
+sudo visudo
+
+osboxes = (ALL:ALL)
+osboxes = ALL = (ALL) No PASSWORD: /script_spe/scp.py
