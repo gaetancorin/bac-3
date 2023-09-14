@@ -1,0 +1,30 @@
+sudo apt install postgresql-11
+cd postgres_app
+chmod +x postgres_scheds_backend_install.sh
+nano ./postgres_scheds_backend_install.sh (changer fichierh pour passer de la version1 2 à 11)
+sudo ./postgres_scheds_backend_install.sh
+cd ..
+sudo apt install nginx
+sudo systemctl stop apache2.service
+sudo systemctl disable apache2.service
+sudo systemctl restart nginx
+
+cd nginx_app
+sudo mv /etc/nginx/nginx.conf /etc/nginx/nginx.conf.ori
+sudo cp nginx.conf /etc/nginx/nginx.conf
+sudo systemctl restart nginx
+
+sudo mkdir -p /var/www/django_scheds_backend/staticfiles/ /var/www/django_scheds_backend/static/ /var/www/django_scheds_backend/media/
+
+sudo apt install python3 python3-pip gettext
+cd ../django_app/
+sudo apt install postgresql-server-dev-11
+sudo pip3 install -r requirements.txt
+
+cd django_scheds_backend/
+sudo ./django_start.sh
+
+curl http://192.168.56.12:8002/protected/api/custom/scheduler_envs/
+
+CELUI LA NE MARCHE PAS
+curl -X POST -H 'Content-Type: application/json' \-d '{"name": "E1", "host": "192.168.56.12", "port": 8002, "env_type": "DEV"}' \ http://192.168.56.12:8002/protected/api/custom/scheduler_envs/
