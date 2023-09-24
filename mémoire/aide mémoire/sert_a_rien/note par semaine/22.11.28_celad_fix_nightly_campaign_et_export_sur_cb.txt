@@ -1,8 +1,0 @@
-28.11.2022 CELAD
-fixation de bug sur le nightly campaign et exportation des tests sur le nightly campaign
-
-- Fixation des bugs sur les campaignes existantes ocr, servo, X et X.
-- Commentaires des paramètres de chaque test afin que le campaign builder définisse les types de chaque paramètre de test et y propose un input adapté sur le campaign builder.
-- Exportation des tests des différentes campaignes sur la base de donnée MongoDb en local pour que le campaign builder puisse y accéder et qu'il soit possible d'accéder a ses tests directement sur le front-end grace au campaign builder.
-
-

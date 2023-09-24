@@ -1,8 +1,0 @@
-03.10.2022 CELAD
-découverte d'angular
-
-- Présentation de l'équipe qui travail sur CAT
-(Olivier Craig, Andréa, Nabil, Axel)
-
--Réalisation du tutoriel Angular "Tour of heroes" sur le site officiel de Angular pour monter en compétence.
-- Remise du matériel professionnel et présentation à l'équipe travaillant sur CAT.
